@@ -12,4 +12,5 @@
 
 @property (nonatomic, weak) UILabel *titleLabel;
 @property (nonatomic, weak) UILabel *noLabel;
+@property (nonatomic, weak) UIImageView *testImageView;
 @end

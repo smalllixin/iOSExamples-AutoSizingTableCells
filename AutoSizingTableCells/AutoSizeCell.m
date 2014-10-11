@@ -9,6 +9,11 @@
 #import "AutoSizeCell.h"
 #import <PureLayout/PureLayout.h>
 
+@interface AutoSizeCell()
+
+
+
+@end
 @implementation AutoSizeCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -16,6 +21,28 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        UIImageView *testImageView = [UIImageView newAutoLayoutView];
+        testImageView.contentMode = UIViewContentModeScaleAspectFill;
+        [self.contentView addSubview:testImageView];
+        testImageView.backgroundColor = [UIColor redColor];
+        _testImageView = testImageView;
+        [testImageView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:5];
+        [testImageView autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:7];
+        [UIView autoSetPriority:UILayoutPriorityDefaultHigh forConstraints:^{
+            [testImageView autoSetDimension:ALDimensionWidth toSize:128];
+            [testImageView autoMatchDimension:ALDimensionHeight toDimension:ALDimensionWidth ofView:testImageView withMultiplier:0.5];
+        }];
+
+        [UIView autoSetPriority:UILayoutPriorityDefaultLow forConstraints:^{
+            [testImageView autoSetContentHuggingPriorityForAxis:ALAxisVertical];
+            [testImageView autoSetContentHuggingPriorityForAxis:ALAxisHorizontal];
+            [testImageView autoSetContentCompressionResistancePriorityForAxis:ALAxisVertical];
+            [testImageView autoSetContentCompressionResistancePriorityForAxis:ALAxisHorizontal];
+        }];
+        
+
+        
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
         titleLabel.font = [UIFont boldSystemFontOfSize:14];
@@ -24,7 +51,10 @@
         self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
         self.titleLabel.numberOfLines = 0;
         
-        [_titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(10, 10, 10, 10) excludingEdge:ALEdgeBottom];
+        [_titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:5];
+        [_titleLabel autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:5];
+        [_titleLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:testImageView withOffset:4];
+//        [_titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(10, 10, 10, 10) excludingEdge:ALEdgeBottom];
         
         UILabel *noLabel = [UILabel newAutoLayoutView];
         noLabel.font = [UIFont systemFontOfSize:20];

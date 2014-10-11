@@ -62,7 +62,7 @@
     // Configure the cell for this indexPath
     cell.titleLabel.text = [self getText:indexPath.row];
     cell.noLabel.text = [NSString stringWithFormat:@"%d 中国好声音，好凉茶好凉茶哦！十大最悲剧的自拍时刻-",indexPath.row];
-    
+    cell.testImageView.image = [UIImage imageNamed:@"fa"];
     return cell;
 }
 
@@ -71,7 +71,7 @@
     AutoSizeCell *cell = [[AutoSizeCell alloc] init];
     cell.titleLabel.text = [self getText:indexPath.row];
     cell.noLabel.text = [NSString stringWithFormat:@"%d 中国好声音，好凉茶好凉茶哦！十大最悲剧的自拍时刻-",indexPath.row];
-    
+    cell.testImageView.image = [UIImage imageNamed:@"fa"];
     // Do the layout pass on the cell, which will calculate the frames for all the views based on the constraints
     // (Note that the preferredMaxLayoutWidth is set on multi-line UILabels inside the -[layoutSubviews] method
     // in the UITableViewCell subclass
