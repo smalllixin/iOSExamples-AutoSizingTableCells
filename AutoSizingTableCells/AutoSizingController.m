@@ -8,8 +8,21 @@
 
 #import "AutoSizingController.h"
 #import "AutoSizeCell.h"
-
+#import <PureLayout.h>
+@interface AutoSizingController()<UITableViewDataSource, UITableViewDelegate>
+@end
 @implementation AutoSizingController
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    UITableView *tableView = [UITableView newAutoLayoutView];
+    [self.view addSubview:tableView];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [tableView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
+    [tableView registerClass:[AutoSizeCell class] forCellReuseIdentifier:@"plerp"];
+}
 
 #pragma mark - Table view data source
 
@@ -20,24 +33,34 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 13;
 }
 
-- (NSString *)getText
+- (NSString *)getText:(NSInteger)row
 {
-    return @"This is some long text that should wrap. It is multiple long sentences that may or may not have spelling and grammatical errors. Yep it should wrap quite nicely and serve as a nice example!";
+    switch (row%4) {
+        case 0:
+            return @"This is some long text that should wrap. It is multiple long sentences that may or may not have spelling and grammatical errors. Yep it should wrap quite nicely and serve as a nice example!";
+        case 1:
+            return @"Run pod install from Terminal, then open your app's .xcworkspace file to launch Xcode.#import PureLayout.h wherever you want to use the API. (Hint: add this import to your prefix header (.pch) file so that the API is automatically available everywhere!)";
+        case 2:
+            return @"十大最悲剧的自拍时刻-看你中了几个blahsd 中国好声音，好凉茶好凉茶哦！十大最悲剧的自拍时刻-看你中了几个blahsd 中国好声音，好凉茶好凉茶哦！";
+        default:
+            return @"If the view is stuck, follow the views that are below it and make sure one of them doesn't have a top space to superview constraint. Then just make sure your number of lines option for the label is set to 0 and it should take care of the rest.";
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Create a reusable cell
-    AutoSizeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"plerp"];
-    if(!cell) {
-        cell = [[AutoSizeCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"plerp"];
-    }
+//    AutoSizeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"plerp"];
+//    if(!cell) {
+//        cell = [[AutoSizeCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"plerp"];
+//    }
+    AutoSizeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"plerp" forIndexPath:indexPath];
     
     // Configure the cell for this indexPath
-    cell.textLabel.text = [self getText];
+    cell.titleLabel.text = [self getText:indexPath.row];
     
     return cell;
 }
@@ -45,7 +68,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     AutoSizeCell *cell = [[AutoSizeCell alloc] init];
-    cell.textLabel.text = [self getText];
+    cell.titleLabel.text = [self getText:indexPath.row];
     
     // Do the layout pass on the cell, which will calculate the frames for all the views based on the constraints
     // (Note that the preferredMaxLayoutWidth is set on multi-line UILabels inside the -[layoutSubviews] method

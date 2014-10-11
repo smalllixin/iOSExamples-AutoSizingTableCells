@@ -21,6 +21,7 @@
 		35A6C1EF1984A25D00528D77 /* AutoSizingTableCellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C1EE1984A25D00528D77 /* AutoSizingTableCellsTests.m */; };
 		35A6C1FA1984A63100528D77 /* AutoSizingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C1F91984A63100528D77 /* AutoSizingController.m */; };
 		35A6C1FD1984A66F00528D77 /* AutoSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C1FC1984A66F00528D77 /* AutoSizeCell.m */; };
+		B362FF59AC5E6C3601AEA61F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C583524C1817951249C70D2E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		35A6C1F91984A63100528D77 /* AutoSizingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoSizingController.m; sourceTree = "<group>"; };
 		35A6C1FB1984A66F00528D77 /* AutoSizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSizeCell.h; sourceTree = "<group>"; };
 		35A6C1FC1984A66F00528D77 /* AutoSizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoSizeCell.m; sourceTree = "<group>"; };
+		5DDADD04E1EA391E460CC7C2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C583524C1817951249C70D2E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25028CC2C170C20C45421F5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				35A6C1CC1984A25D00528D77 /* CoreGraphics.framework in Frameworks */,
 				35A6C1CE1984A25D00528D77 /* UIKit.framework in Frameworks */,
 				35A6C1CA1984A25D00528D77 /* Foundation.framework in Frameworks */,
+				B362FF59AC5E6C3601AEA61F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,7 @@
 				35A6C1E81984A25D00528D77 /* AutoSizingTableCellsTests */,
 				35A6C1C81984A25D00528D77 /* Frameworks */,
 				35A6C1C71984A25D00528D77 /* Products */,
+				B8539F99774D7EA0AA8DEB48 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +112,7 @@
 				35A6C1CB1984A25D00528D77 /* CoreGraphics.framework */,
 				35A6C1CD1984A25D00528D77 /* UIKit.framework */,
 				35A6C1E21984A25D00528D77 /* XCTest.framework */,
+				C583524C1817951249C70D2E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +161,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B8539F99774D7EA0AA8DEB48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DDADD04E1EA391E460CC7C2 /* Pods.debug.xcconfig */,
+				F25028CC2C170C20C45421F5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35A6C1F21984A25D00528D77 /* Build configuration list for PBXNativeTarget "AutoSizingTableCells" */;
 			buildPhases = (
+				2967D4EFACA9352845DD1572 /* Check Pods Manifest.lock */,
 				35A6C1C21984A25D00528D77 /* Sources */,
 				35A6C1C31984A25D00528D77 /* Frameworks */,
 				35A6C1C41984A25D00528D77 /* Resources */,
+				A37A298D62466C9F0AF8540A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +261,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2967D4EFACA9352845DD1572 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A37A298D62466C9F0AF8540A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35A6C1C21984A25D00528D77 /* Sources */ = {
@@ -366,12 +417,14 @@
 		};
 		35A6C1F31984A25D00528D77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DDADD04E1EA391E460CC7C2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoSizingTableCells/AutoSizingTableCells-Prefix.pch";
 				INFOPLIST_FILE = "AutoSizingTableCells/AutoSizingTableCells-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -379,12 +432,14 @@
 		};
 		35A6C1F41984A25D00528D77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25028CC2C170C20C45421F5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoSizingTableCells/AutoSizingTableCells-Prefix.pch";
 				INFOPLIST_FILE = "AutoSizingTableCells/AutoSizingTableCells-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -449,6 +504,7 @@
 				35A6C1F41984A25D00528D77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35A6C1F51984A25D00528D77 /* Build configuration list for PBXNativeTarget "AutoSizingTableCellsTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +513,7 @@
 				35A6C1F71984A25D00528D77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

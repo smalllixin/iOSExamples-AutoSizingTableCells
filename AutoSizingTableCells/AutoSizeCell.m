@@ -7,6 +7,7 @@
 //
 
 #import "AutoSizeCell.h"
+#import <PureLayout/PureLayout.h>
 
 @implementation AutoSizeCell
 
@@ -14,13 +15,26 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        titleLabel.font = [UIFont boldSystemFontOfSize:14];
+        [self.contentView addSubview:titleLabel];
+        _titleLabel = titleLabel;
+        self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        self.titleLabel.numberOfLines = 0;
         
-        self.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        self.textLabel.numberOfLines = 0;
-        self.textLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        [_titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
         
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-6-[bodyLabel]-6-|" options:0 metrics:nil views:@{ @"bodyLabel": self.textLabel }]];
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-6-[bodyLabel]-6-|" options:0 metrics:nil views:@{ @"bodyLabel": self.textLabel }]];
+//        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-6-[bodyLabel]-6-|" options:0 metrics:nil views:@{ @"bodyLabel": self.titleLabel }]];
+//        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-6-[bodyLabel]-6-|" options:0 metrics:nil views:@{ @"bodyLabel": self.titleLabel }]];
+        
+//        self.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+//        self.textLabel.numberOfLines = 0;
+//        self.textLabel.translatesAutoresizingMaskIntoConstraints = NO;
+//        
+//        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-6-[bodyLabel]-6-|" options:0 metrics:nil views:@{ @"bodyLabel": self.textLabel }]];
+//        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-6-[bodyLabel]-6-|" options:0 metrics:nil views:@{ @"bodyLabel": self.textLabel }]];
     }
     
     return self;
@@ -37,7 +51,7 @@
     
     // Set the preferredMaxLayoutWidth of the mutli-line bodyLabel based on the evaluated width of the label's frame,
     // as this will allow the text to wrap correctly, and as a result allow the label to take on the correct height.
-    self.textLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.textLabel.frame);
+    self.titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.titleLabel.frame);
 }
 
 @end

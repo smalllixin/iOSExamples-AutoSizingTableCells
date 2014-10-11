@@ -10,4 +10,5 @@
 
 @interface AutoSizeCell : UITableViewCell
 
+@property (nonatomic, weak) UILabel *titleLabel;
 @end

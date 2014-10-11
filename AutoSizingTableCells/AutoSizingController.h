@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AutoSizingController : UITableViewController
+@interface AutoSizingController : UIViewController
 
 @end
