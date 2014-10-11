@@ -1,521 +1,1119 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		35A6C1CA1984A25D00528D77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A6C1C91984A25D00528D77 /* Foundation.framework */; };
-		35A6C1CC1984A25D00528D77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A6C1CB1984A25D00528D77 /* CoreGraphics.framework */; };
-		35A6C1CE1984A25D00528D77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A6C1CD1984A25D00528D77 /* UIKit.framework */; };
-		35A6C1D41984A25D00528D77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C1D21984A25D00528D77 /* InfoPlist.strings */; };
-		35A6C1D61984A25D00528D77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C1D51984A25D00528D77 /* main.m */; };
-		35A6C1DA1984A25D00528D77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C1D91984A25D00528D77 /* AppDelegate.m */; };
-		35A6C1DC1984A25D00528D77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C1DB1984A25D00528D77 /* Images.xcassets */; };
-		35A6C1E31984A25D00528D77 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A6C1E21984A25D00528D77 /* XCTest.framework */; };
-		35A6C1E41984A25D00528D77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A6C1C91984A25D00528D77 /* Foundation.framework */; };
-		35A6C1E51984A25D00528D77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A6C1CD1984A25D00528D77 /* UIKit.framework */; };
-		35A6C1ED1984A25D00528D77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C1EB1984A25D00528D77 /* InfoPlist.strings */; };
-		35A6C1EF1984A25D00528D77 /* AutoSizingTableCellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C1EE1984A25D00528D77 /* AutoSizingTableCellsTests.m */; };
-		35A6C1FA1984A63100528D77 /* AutoSizingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C1F91984A63100528D77 /* AutoSizingController.m */; };
-		35A6C1FD1984A66F00528D77 /* AutoSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C1FC1984A66F00528D77 /* AutoSizeCell.m */; };
-		B362FF59AC5E6C3601AEA61F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C583524C1817951249C70D2E /* libPods.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		35A6C1E61984A25D00528D77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35A6C1BE1984A25D00528D77 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 35A6C1C51984A25D00528D77;
-			remoteInfo = AutoSizingTableCells;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		35A6C1C61984A25D00528D77 /* AutoSizingTableCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoSizingTableCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35A6C1C91984A25D00528D77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		35A6C1CB1984A25D00528D77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		35A6C1CD1984A25D00528D77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		35A6C1D11984A25D00528D77 /* AutoSizingTableCells-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoSizingTableCells-Info.plist"; sourceTree = "<group>"; };
-		35A6C1D31984A25D00528D77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		35A6C1D51984A25D00528D77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		35A6C1D71984A25D00528D77 /* AutoSizingTableCells-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoSizingTableCells-Prefix.pch"; sourceTree = "<group>"; };
-		35A6C1D81984A25D00528D77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		35A6C1D91984A25D00528D77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		35A6C1DB1984A25D00528D77 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		35A6C1E11984A25D00528D77 /* AutoSizingTableCellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoSizingTableCellsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		35A6C1E21984A25D00528D77 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		35A6C1EA1984A25D00528D77 /* AutoSizingTableCellsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoSizingTableCellsTests-Info.plist"; sourceTree = "<group>"; };
-		35A6C1EC1984A25D00528D77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		35A6C1EE1984A25D00528D77 /* AutoSizingTableCellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoSizingTableCellsTests.m; sourceTree = "<group>"; };
-		35A6C1F81984A63100528D77 /* AutoSizingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSizingController.h; sourceTree = "<group>"; };
-		35A6C1F91984A63100528D77 /* AutoSizingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoSizingController.m; sourceTree = "<group>"; };
-		35A6C1FB1984A66F00528D77 /* AutoSizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSizeCell.h; sourceTree = "<group>"; };
-		35A6C1FC1984A66F00528D77 /* AutoSizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoSizeCell.m; sourceTree = "<group>"; };
-		5DDADD04E1EA391E460CC7C2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C583524C1817951249C70D2E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F25028CC2C170C20C45421F5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		35A6C1C31984A25D00528D77 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35A6C1CC1984A25D00528D77 /* CoreGraphics.framework in Frameworks */,
-				35A6C1CE1984A25D00528D77 /* UIKit.framework in Frameworks */,
-				35A6C1CA1984A25D00528D77 /* Foundation.framework in Frameworks */,
-				B362FF59AC5E6C3601AEA61F /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35A6C1DE1984A25D00528D77 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35A6C1E31984A25D00528D77 /* XCTest.framework in Frameworks */,
-				35A6C1E51984A25D00528D77 /* UIKit.framework in Frameworks */,
-				35A6C1E41984A25D00528D77 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		35A6C1BD1984A25D00528D77 = {
-			isa = PBXGroup;
-			children = (
-				35A6C1CF1984A25D00528D77 /* AutoSizingTableCells */,
-				35A6C1E81984A25D00528D77 /* AutoSizingTableCellsTests */,
-				35A6C1C81984A25D00528D77 /* Frameworks */,
-				35A6C1C71984A25D00528D77 /* Products */,
-				B8539F99774D7EA0AA8DEB48 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		35A6C1C71984A25D00528D77 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				35A6C1C61984A25D00528D77 /* AutoSizingTableCells.app */,
-				35A6C1E11984A25D00528D77 /* AutoSizingTableCellsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		35A6C1C81984A25D00528D77 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				35A6C1C91984A25D00528D77 /* Foundation.framework */,
-				35A6C1CB1984A25D00528D77 /* CoreGraphics.framework */,
-				35A6C1CD1984A25D00528D77 /* UIKit.framework */,
-				35A6C1E21984A25D00528D77 /* XCTest.framework */,
-				C583524C1817951249C70D2E /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		35A6C1CF1984A25D00528D77 /* AutoSizingTableCells */ = {
-			isa = PBXGroup;
-			children = (
-				35A6C1D81984A25D00528D77 /* AppDelegate.h */,
-				35A6C1D91984A25D00528D77 /* AppDelegate.m */,
-				35A6C1FB1984A66F00528D77 /* AutoSizeCell.h */,
-				35A6C1FC1984A66F00528D77 /* AutoSizeCell.m */,
-				35A6C1F81984A63100528D77 /* AutoSizingController.h */,
-				35A6C1F91984A63100528D77 /* AutoSizingController.m */,
-				35A6C1DB1984A25D00528D77 /* Images.xcassets */,
-				35A6C1D01984A25D00528D77 /* Supporting Files */,
-			);
-			path = AutoSizingTableCells;
-			sourceTree = "<group>";
-		};
-		35A6C1D01984A25D00528D77 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				35A6C1D11984A25D00528D77 /* AutoSizingTableCells-Info.plist */,
-				35A6C1D21984A25D00528D77 /* InfoPlist.strings */,
-				35A6C1D51984A25D00528D77 /* main.m */,
-				35A6C1D71984A25D00528D77 /* AutoSizingTableCells-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		35A6C1E81984A25D00528D77 /* AutoSizingTableCellsTests */ = {
-			isa = PBXGroup;
-			children = (
-				35A6C1EE1984A25D00528D77 /* AutoSizingTableCellsTests.m */,
-				35A6C1E91984A25D00528D77 /* Supporting Files */,
-			);
-			path = AutoSizingTableCellsTests;
-			sourceTree = "<group>";
-		};
-		35A6C1E91984A25D00528D77 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				35A6C1EA1984A25D00528D77 /* AutoSizingTableCellsTests-Info.plist */,
-				35A6C1EB1984A25D00528D77 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B8539F99774D7EA0AA8DEB48 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5DDADD04E1EA391E460CC7C2 /* Pods.debug.xcconfig */,
-				F25028CC2C170C20C45421F5 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		35A6C1C51984A25D00528D77 /* AutoSizingTableCells */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35A6C1F21984A25D00528D77 /* Build configuration list for PBXNativeTarget "AutoSizingTableCells" */;
-			buildPhases = (
-				2967D4EFACA9352845DD1572 /* Check Pods Manifest.lock */,
-				35A6C1C21984A25D00528D77 /* Sources */,
-				35A6C1C31984A25D00528D77 /* Frameworks */,
-				35A6C1C41984A25D00528D77 /* Resources */,
-				A37A298D62466C9F0AF8540A /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AutoSizingTableCells;
-			productName = AutoSizingTableCells;
-			productReference = 35A6C1C61984A25D00528D77 /* AutoSizingTableCells.app */;
-			productType = "com.apple.product-type.application";
-		};
-		35A6C1E01984A25D00528D77 /* AutoSizingTableCellsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35A6C1F51984A25D00528D77 /* Build configuration list for PBXNativeTarget "AutoSizingTableCellsTests" */;
-			buildPhases = (
-				35A6C1DD1984A25D00528D77 /* Sources */,
-				35A6C1DE1984A25D00528D77 /* Frameworks */,
-				35A6C1DF1984A25D00528D77 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				35A6C1E71984A25D00528D77 /* PBXTargetDependency */,
-			);
-			name = AutoSizingTableCellsTests;
-			productName = AutoSizingTableCellsTests;
-			productReference = 35A6C1E11984A25D00528D77 /* AutoSizingTableCellsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		35A6C1BE1984A25D00528D77 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = RedTurn;
-				TargetAttributes = {
-					35A6C1E01984A25D00528D77 = {
-						TestTargetID = 35A6C1C51984A25D00528D77;
-					};
-				};
-			};
-			buildConfigurationList = 35A6C1C11984A25D00528D77 /* Build configuration list for PBXProject "AutoSizingTableCells" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 35A6C1BD1984A25D00528D77;
-			productRefGroup = 35A6C1C71984A25D00528D77 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				35A6C1C51984A25D00528D77 /* AutoSizingTableCells */,
-				35A6C1E01984A25D00528D77 /* AutoSizingTableCellsTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		35A6C1C41984A25D00528D77 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35A6C1D41984A25D00528D77 /* InfoPlist.strings in Resources */,
-				35A6C1DC1984A25D00528D77 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35A6C1DF1984A25D00528D77 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35A6C1ED1984A25D00528D77 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2967D4EFACA9352845DD1572 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A37A298D62466C9F0AF8540A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		35A6C1C21984A25D00528D77 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35A6C1DA1984A25D00528D77 /* AppDelegate.m in Sources */,
-				35A6C1FD1984A66F00528D77 /* AutoSizeCell.m in Sources */,
-				35A6C1D61984A25D00528D77 /* main.m in Sources */,
-				35A6C1FA1984A63100528D77 /* AutoSizingController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35A6C1DD1984A25D00528D77 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35A6C1EF1984A25D00528D77 /* AutoSizingTableCellsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		35A6C1E71984A25D00528D77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 35A6C1C51984A25D00528D77 /* AutoSizingTableCells */;
-			targetProxy = 35A6C1E61984A25D00528D77 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		35A6C1D21984A25D00528D77 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35A6C1D31984A25D00528D77 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		35A6C1EB1984A25D00528D77 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35A6C1EC1984A25D00528D77 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		35A6C1F01984A25D00528D77 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		35A6C1F11984A25D00528D77 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		35A6C1F31984A25D00528D77 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DDADD04E1EA391E460CC7C2 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoSizingTableCells/AutoSizingTableCells-Prefix.pch";
-				INFOPLIST_FILE = "AutoSizingTableCells/AutoSizingTableCells-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		35A6C1F41984A25D00528D77 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F25028CC2C170C20C45421F5 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoSizingTableCells/AutoSizingTableCells-Prefix.pch";
-				INFOPLIST_FILE = "AutoSizingTableCells/AutoSizingTableCells-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		35A6C1F61984A25D00528D77 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoSizingTableCells.app/AutoSizingTableCells";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoSizingTableCells/AutoSizingTableCells-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AutoSizingTableCellsTests/AutoSizingTableCellsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		35A6C1F71984A25D00528D77 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoSizingTableCells.app/AutoSizingTableCells";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoSizingTableCells/AutoSizingTableCells-Prefix.pch";
-				INFOPLIST_FILE = "AutoSizingTableCellsTests/AutoSizingTableCellsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		35A6C1C11984A25D00528D77 /* Build configuration list for PBXProject "AutoSizingTableCells" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35A6C1F01984A25D00528D77 /* Debug */,
-				35A6C1F11984A25D00528D77 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35A6C1F21984A25D00528D77 /* Build configuration list for PBXNativeTarget "AutoSizingTableCells" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35A6C1F31984A25D00528D77 /* Debug */,
-				35A6C1F41984A25D00528D77 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35A6C1F51984A25D00528D77 /* Build configuration list for PBXNativeTarget "AutoSizingTableCellsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35A6C1F61984A25D00528D77 /* Debug */,
-				35A6C1F71984A25D00528D77 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 35A6C1BE1984A25D00528D77 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>2967D4EFACA9352845DD1572</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>35A6C1BD1984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1CF1984A25D00528D77</string>
+				<string>35A6C1E81984A25D00528D77</string>
+				<string>35A6C1C81984A25D00528D77</string>
+				<string>35A6C1C71984A25D00528D77</string>
+				<string>B8539F99774D7EA0AA8DEB48</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1BE1984A25D00528D77</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>RedTurn</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>35A6C1E01984A25D00528D77</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>35A6C1C51984A25D00528D77</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>35A6C1C11984A25D00528D77</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>35A6C1BD1984A25D00528D77</string>
+			<key>productRefGroup</key>
+			<string>35A6C1C71984A25D00528D77</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>35A6C1C51984A25D00528D77</string>
+				<string>35A6C1E01984A25D00528D77</string>
+			</array>
+		</dict>
+		<key>35A6C1C11984A25D00528D77</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>35A6C1F01984A25D00528D77</string>
+				<string>35A6C1F11984A25D00528D77</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>35A6C1C21984A25D00528D77</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35A6C1DA1984A25D00528D77</string>
+				<string>35A6C1FD1984A66F00528D77</string>
+				<string>35A6C1D61984A25D00528D77</string>
+				<string>35A6C1FA1984A63100528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35A6C1C31984A25D00528D77</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35A6C1CC1984A25D00528D77</string>
+				<string>35A6C1CE1984A25D00528D77</string>
+				<string>35A6C1CA1984A25D00528D77</string>
+				<string>B362FF59AC5E6C3601AEA61F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35A6C1C41984A25D00528D77</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35A6C1D41984A25D00528D77</string>
+				<string>35A6C1DC1984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35A6C1C51984A25D00528D77</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>35A6C1F21984A25D00528D77</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2967D4EFACA9352845DD1572</string>
+				<string>35A6C1C21984A25D00528D77</string>
+				<string>35A6C1C31984A25D00528D77</string>
+				<string>35A6C1C41984A25D00528D77</string>
+				<string>A37A298D62466C9F0AF8540A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AutoSizingTableCells</string>
+			<key>productName</key>
+			<string>AutoSizingTableCells</string>
+			<key>productReference</key>
+			<string>35A6C1C61984A25D00528D77</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>35A6C1C61984A25D00528D77</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AutoSizingTableCells.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>35A6C1C71984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1C61984A25D00528D77</string>
+				<string>35A6C1E11984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1C81984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1C91984A25D00528D77</string>
+				<string>35A6C1CB1984A25D00528D77</string>
+				<string>35A6C1CD1984A25D00528D77</string>
+				<string>35A6C1E21984A25D00528D77</string>
+				<string>C583524C1817951249C70D2E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1C91984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>35A6C1CA1984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1C91984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1CB1984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>35A6C1CC1984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1CB1984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1CD1984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>35A6C1CE1984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1CD1984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1CF1984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1D81984A25D00528D77</string>
+				<string>35A6C1D91984A25D00528D77</string>
+				<string>35A6C1FB1984A66F00528D77</string>
+				<string>35A6C1FC1984A66F00528D77</string>
+				<string>35A6C1F81984A63100528D77</string>
+				<string>35A6C1F91984A63100528D77</string>
+				<string>35A6C1DB1984A25D00528D77</string>
+				<string>35A6C1D01984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AutoSizingTableCells</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1D01984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1D11984A25D00528D77</string>
+				<string>35A6C1D21984A25D00528D77</string>
+				<string>35A6C1D51984A25D00528D77</string>
+				<string>35A6C1D71984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1D11984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AutoSizingTableCells-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1D21984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1D31984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1D31984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1D41984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1D21984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1D51984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1D61984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1D51984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1D71984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AutoSizingTableCells-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1D81984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1D91984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1DA1984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1D91984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1DB1984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1DC1984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1DB1984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1DD1984A25D00528D77</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35A6C1EF1984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35A6C1DE1984A25D00528D77</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35A6C1E31984A25D00528D77</string>
+				<string>35A6C1E51984A25D00528D77</string>
+				<string>35A6C1E41984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35A6C1DF1984A25D00528D77</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35A6C1ED1984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35A6C1E01984A25D00528D77</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>35A6C1F51984A25D00528D77</string>
+			<key>buildPhases</key>
+			<array>
+				<string>35A6C1DD1984A25D00528D77</string>
+				<string>35A6C1DE1984A25D00528D77</string>
+				<string>35A6C1DF1984A25D00528D77</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>35A6C1E71984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AutoSizingTableCellsTests</string>
+			<key>productName</key>
+			<string>AutoSizingTableCellsTests</string>
+			<key>productReference</key>
+			<string>35A6C1E11984A25D00528D77</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>35A6C1E11984A25D00528D77</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AutoSizingTableCellsTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>35A6C1E21984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>35A6C1E31984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1E21984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1E41984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1C91984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1E51984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1CD1984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1E61984A25D00528D77</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>35A6C1BE1984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>35A6C1C51984A25D00528D77</string>
+			<key>remoteInfo</key>
+			<string>AutoSizingTableCells</string>
+		</dict>
+		<key>35A6C1E71984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>35A6C1C51984A25D00528D77</string>
+			<key>targetProxy</key>
+			<string>35A6C1E61984A25D00528D77</string>
+		</dict>
+		<key>35A6C1E81984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1EE1984A25D00528D77</string>
+				<string>35A6C1E91984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AutoSizingTableCellsTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1E91984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1EA1984A25D00528D77</string>
+				<string>35A6C1EB1984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1EA1984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AutoSizingTableCellsTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1EB1984A25D00528D77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35A6C1EC1984A25D00528D77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1EC1984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1ED1984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1EB1984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1EE1984A25D00528D77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AutoSizingTableCellsTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1EF1984A25D00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1EE1984A25D00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1F01984A25D00528D77</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>35A6C1F11984A25D00528D77</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>35A6C1F21984A25D00528D77</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>35A6C1F31984A25D00528D77</string>
+				<string>35A6C1F41984A25D00528D77</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>35A6C1F31984A25D00528D77</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5DDADD04E1EA391E460CC7C2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoSizingTableCells/AutoSizingTableCells-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoSizingTableCells/AutoSizingTableCells-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>35A6C1F41984A25D00528D77</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F25028CC2C170C20C45421F5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoSizingTableCells/AutoSizingTableCells-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoSizingTableCells/AutoSizingTableCells-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>35A6C1F51984A25D00528D77</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>35A6C1F61984A25D00528D77</string>
+				<string>35A6C1F71984A25D00528D77</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>35A6C1F61984A25D00528D77</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AutoSizingTableCells.app/AutoSizingTableCells</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoSizingTableCells/AutoSizingTableCells-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoSizingTableCellsTests/AutoSizingTableCellsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>35A6C1F71984A25D00528D77</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AutoSizingTableCells.app/AutoSizingTableCells</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoSizingTableCells/AutoSizingTableCells-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoSizingTableCellsTests/AutoSizingTableCellsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>35A6C1F81984A63100528D77</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AutoSizingController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1F91984A63100528D77</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AutoSizingController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1FA1984A63100528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1F91984A63100528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35A6C1FB1984A66F00528D77</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AutoSizeCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1FC1984A66F00528D77</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AutoSizeCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35A6C1FD1984A66F00528D77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35A6C1FC1984A66F00528D77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5DDADD04E1EA391E460CC7C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A37A298D62466C9F0AF8540A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B362FF59AC5E6C3601AEA61F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C583524C1817951249C70D2E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B8539F99774D7EA0AA8DEB48</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5DDADD04E1EA391E460CC7C2</string>
+				<string>F25028CC2C170C20C45421F5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C583524C1817951249C70D2E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F25028CC2C170C20C45421F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>35A6C1BE1984A25D00528D77</string>
+</dict>
+</plist>
